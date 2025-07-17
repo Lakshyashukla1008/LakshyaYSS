@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Mobile-first: Stack layout */
+.cell {
+    background-color: beige;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 1rem;
+    width: 100%;
+}
+
+.heading {
+    font-size: x-large;
+    color: #FF9933;
+    text-align: center;
+    white-space: nowrap; /* ⛔ Prevent line break */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home {
+    border: 2px solid black;
+    border-radius: 0.7rem;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.home a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+/* Tablets and up: side-by-side layout */
+@media only screen and (min-width: 600px) {
+    .cell {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    .heading {
+        font-size: xx-large;
+        margin: 0;
+        text-align: left;
+        white-space: nowrap; /* ✅ Force single line */
+    }
+
+    .home {
+        width: 100px;
+        margin: 0;
+    }
+}
+
+/* Desktop screens */
+@media only screen and (min-width: 1000px) {
+    .heading {
+        font-size: xxx-large;
+        margin-left: 10rem;
+    }
+
+    .cell {
+        gap: 31rem; /* Optional: for large gaps */
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Page</title>
+    <link rel="stylesheet" href="/CSS/Contribution.css">
+</head>
+
+<body>
+    <div id="Header-placeholder"></div>
+
+    <header class="header">
+        <h1 class="ContrbutionHeading">Weekly Contribution</h1>
+    </header>
+
+    <form id="form">
+        <div class="inerbox">
+
+            <!-- Name Section -->
+            <div class="div" class="Name_section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <!-- Address Section -->
+            <div class="div" class="Address">
+                <label for="Address">Address:</label><br>
+                <label for="House">House No:</label>
+                <input type="text" id="House" maxlength="35">
+                <label for="city">City:</label>
+                <select class="div" name="State" id="city">
+                    <option value="">Select</option>
+                    <option value="sahibabad">Sahibabad</option>
+                    <option value="Ghazibad">Ghazibad</option>
+                </select>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="div">
+                <label for="Pay">Payment Amount:</label>
+                <input type="number" id="Pay" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="Button">Pay</button>
+
+        </div>
+    </form>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- ✅ WORKING JavaScript -->
+    <script>
+        const form = document.getElementById("form");
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting normally
+
+            const name = document.getElementById("name").value;
+            const payment = document.getElementById("Pay").value;
+
+            // Store to localStorage
+            localStorage.setItem("name", name);
+            localStorage.setItem("payment", payment);
+
+            // Redirect
+            window.location.href = "/body/payment.html";
+        });
+    </script>
+
+    <script src="/Java_script/Home.js"></script>
+    <script src="/Java_script/footerConection..js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Page</title>
+    <link rel="stylesheet" href="/CSS/Contribution.css">
+</head>
+
+<body>
+    <div id="Header-placeholder"></div>
+
+    <header class="header">
+        <h1 class="ContrbutionHeading">Weekly Contribution</h1>
+    </header>
+
+    <form id="form">
+        <div class="inerbox">
+
+            <!- Name Section 
+            <div class="Name_section">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <!- Address Section 
+            <div class="Address">
+                <label for="Address">Address:</label><br>
+                <label for="House">House No:</label>
+                <input type="text" id="House" maxlength="35">
+                <label for="city">City:</label>
+                <select name="State" id="city">
+                    <option value="">Select</option>
+                    <option value="sahibabad">Sahibabad</option>
+                    <option value="Ghazibad">Ghazibad</option>
+                </select>
+            </div>
+
+            <!-Payment Section 
+            <div>
+                <label for="Pay">Payment Amount:</label>
+                <input type="number" id="Pay" required>
+            </div>
+
+             Submit Button 
+            <button type="submit" id="Button">Pay</button>
+
+        </div>
+    </form>
+
+    <div id="footer-placeholder"></div>
+
+    <! ✅ WORKING JavaScript 
+    <script>
+        const form = document.getElementById("form");
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from submitting normally
+
+            const name = document.getElementById("name").value;
+            const payment = document.getElementById("Pay").value;
+
+            // Store to localStorage
+            localStorage.setItem("name", name);
+            localStorage.setItem("payment", payment);
+
+            // Redirect
+            window.location.href = "/body/payment.html";
+        });
+    </script>
+
+    <script src="/Java_script/Home.js"></script>
+    <script src="/Java_script/footerConection..js"></script>
+</body>
+
+</html> -->

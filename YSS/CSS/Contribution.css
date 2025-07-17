@@ -1,0 +1,191 @@
+.ContrbutionHeading {
+    padding: 30px;
+    font-size: 2.5rem;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.7rem;
+}
+
+body {
+    background-color: #e6ffda;
+    margin: 5px;
+}
+
+.header {
+    text-align: center;
+}
+
+form {
+    border: 2px solid black;
+    box-shadow: 0 4px 15px black;
+    background-color: #ccc;
+    min-width: 200px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.inerbox {
+
+    margin: 2rem 10px;
+
+}
+
+.div {
+    font-size: x-large;
+    display: inline-block;
+}
+
+
+.div,
+input {
+    width: 99%;
+    padding: 0.75rem;
+    margin:0.5rem 0 0.2rem 0;
+}
+.Address {
+    position: relative;
+    bottom: 10px;
+}
+
+input {
+    font-size: x-large;
+    color: black;
+
+}
+
+select {
+
+    font: 1.56rem 'Fira Sans', sans-serif;
+    width: 88%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+button {
+
+    height: 2.3rem;
+    width: 5rem;
+    font-size: large;
+    background-color: greenyellow;
+    border-radius: 1.5rem;
+    border: 0.1px solid black;
+    color: black;
+    margin-left: 0.9rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.city{
+    margin-top:33px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+h1{
+    padding: 30px;
+    font-size: 2.5rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.7rem;
+}
+
+body {
+    background-color: #e6ffda;
+    margin: 5px;
+}
+
+.header {
+    text-align: center;
+}
+
+form {
+    border: 2px solid black;
+    box-shadow: 0 4px 15px black;
+    background-color: #ccc;
+    min-width: 200px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+div,
+.inerbox {
+
+    margin: 2rem 10px;
+
+}
+
+div {
+    font-size: larger;
+    display: inline-block;
+}
+
+div,
+input {
+    width: 99%;
+    padding: 0.75rem;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.Address {
+    position: relative;
+    bottom: 10px;
+}
+
+input {
+    font-size:x-large;
+}
+
+select {
+
+    font: 1.56rem 'Fira Sans', sans-serif;
+    width: 88%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+button {
+    height: 2.3rem;
+    width: 5rem;
+    font-size: large;
+    background-color: greenyellow;
+    border-radius: 1.5rem;
+    border: 0.1px solid black;
+    color: black;
+    margin-left: 0.9rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+} */

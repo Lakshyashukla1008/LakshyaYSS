@@ -1,0 +1,31 @@
+.box {
+    height: 426px;
+    width: 98%;
+    margin: 50px auto 50px;
+    background-color: aquamarine;
+    border: 2px black solid;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+}
+.info{
+    height: auto;
+    width: 48%;
+    background-color: rgb(255, 245, 245);
+    margin: 20px auto 40px ;
+    text-align: center;
+}
+.bodycontainer{
+    display: flex;
+}
+h2{
+    color: black;
+    padding-top: 10px;
+}

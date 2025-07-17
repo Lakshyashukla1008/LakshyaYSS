@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/CSS/Payment.css">
+</head>
+
+<body>
+    <div class="PaymentCell">
+        <div class="PaymentName">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div class="Payment">
+            <label for="Pay">Payment Amount</label>
+            <input type="number" id="Pay">
+        </div>
+    </div>
+
+    <script>
+        // ✅ Get values using correct keys
+        const name = localStorage.getItem("name");
+        const payment = localStorage.getItem("payment");
+
+        // ✅ Assign values to inputs with correct IDs
+        document.getElementById("name").value = name || '';
+        document.getElementById("Pay").value = payment || '';
+    </script>
+</body>
+
+</html>
